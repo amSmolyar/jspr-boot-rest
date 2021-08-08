@@ -22,10 +22,10 @@ public class UserRepository {
     }
 
     private void createAuthoritiesMap() {
-        authoritiesMap.put(new User("user1", "password1"), List.of(READ));
-        authoritiesMap.put(new User("Jack", "password2"), List.of(READ, WRITE, DELETE));
-        authoritiesMap.put(new User("Pavka", "password3"), List.of(READ, WRITE));
-        authoritiesMap.put(new User("Ponchik", "password4"), List.of(READ));
-        authoritiesMap.put(new User("Stepka", "password5"), List.of(READ, WRITE, DELETE));
+        authoritiesMap.put(new User("user1", "password1"), Arrays.asList(READ));
+        authoritiesMap.put(new User("Jack", "password2"), Arrays.asList(READ, WRITE, DELETE));
+        authoritiesMap.put(new User("Pavka", "password3"), Arrays.asList(READ, WRITE));
+        authoritiesMap.put(new User("Ponchik", "password4"), Arrays.asList(READ));
+        authoritiesMap.put(new User("Stepka", "password5"), Arrays.asList(READ, WRITE, DELETE));
     }
 }
